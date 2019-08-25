@@ -1,0 +1,68 @@
+<?php
+
+  if (isset($_POST['submit'])) {
+    $mailFrom = $_POST['email'];
+    $message = $_POST['message'];
+
+    $mailTo = "emmanuel.mehari64@gmail.com";
+    $headers = "From: ".$mailFrom;
+
+    mail($mailTo, $headers);
+    header("Location: index.html?mailsend");
+    echo "mailsend";
+  }
+
+ ?>
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <link rel="stylesheet" href="css/style2.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <title>Thank You</title>
+   </head>
+ <body>
+   <header>
+     <nav class="main-nav clearfix">
+       <div class="header-main clearfix">
+          <img src="images/Logo1.png" alt="Guitar Logo" class="logo" height="90px" width"90px"/>
+          <div class="name-title">
+            <h1 class="main-name">Jeffery C. Aaron, PhD</h1>
+            <h3 class="main-title">Private Tutor</h3>
+          </div>
+       </div>
+       <ul>
+         <li><h2><a href="#instruments">Instruments</a></h2></li> <hr/>
+         <li><h2><a href="#about">About</a></h2></li> <hr/>
+         <li><h2 class="contact-nav"><a href="#contact">Contact</a></h2></li>
+       </ul>
+     </nav>
+   </header>
+
+   <div class="banner">
+
+     <div class="thanks">
+
+     <center>
+
+     <main style = "padding-top:156px;">
+
+     <h1 style="font-size: 4.5rem;">Thank You</h1>
+
+     <p style="font-size: 3em;"> I will be contacting you shortly</p>
+
+     <a style="font-size: 2em;" href="index.html">Back to Home</a>
+
+     </main>
+
+     </center>
+
+     </div>
+
+   </div>
+
+ </body>
+ </html>

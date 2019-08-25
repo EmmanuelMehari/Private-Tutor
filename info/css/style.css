@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Base Layout Styles */
+
+    .wrapper {
+      text-align: center;
+      background-color: #fff;
+      min-height: calc(100vh - 64px);
+    }
+
+    .main {
+      background-color: #fff;
+      padding-bottom: 20px;
+      margin-bottom: 16px;
+    }
+
+    .carousel {
+      height: 100%;
+    }
+
+    .banner {
+      background-image: url("../images/bannerbackground.jpg");
+      background-color: #f6edc7;
+      background-repeat: no-repeat; /* d */
+      background-size: cover; /* d */
+      background-position: center; /* d */
+      background-attachment: fixed; /* d */
+      filter: brightness(100%);
+      height: 30em;
+    }
+
+    .secondary-name {
+      display: none;
+    }
+
+    .container,
+    #instruct {
+      display: none;
+    }
+
+    .container-zero {
+      display: none;
+    }
+
+    .main-footer {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+/* Base Element Styles */
+
+  .contact {
+    margin: auto;
+    width: 70%;
+  }
+
+  hr {
+    display: block;
+  }
+
+  .border-one {
+    display: none;
+  }
+
+  .about {
+    padding-top: 3em;
+    padding-bottom: .2em;
+    margin: auto;
+    width: 70%;
+  }
+
+  .about p {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .piano,
+  .guitar,
+  .mouth,
+  .violin,
+  .doublebass {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 6em;
+    height: 20em;
+    width: 50%;
+    height: 50%;
+    max-height: 30em;
+    max-width: 30em;
+  }
+
+/* Navigation */
+
+    .main-nav ul{
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .main-nav li {
+      padding: 10px;
+      display: block;
+    }
+    .main-nav a{
+      color: black;
+      display: block;
+      padding: 10px 10px;
+    }
+
+    .main-nav a:hover {
+      color: gray;
+    }
+
+    .logo {
+      display: flex;
+      flex-grow: (2);
+      float: left;
+      margin: 20px 0px 20px 20px;
+    }
+
+    .main-name {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-top: 30px;
+      padding: 0 0px 0px 0px;
+    }
+
+    .main-title {
+     padding: 10px 10px ;
+     font-size: 1.5em;
+     font-weight: bold;
+     display: block;
+     margin-top: 10px;
+    }
+
+    .name-title {
+      display: block;
+      vertical-align: top;
+      width: 70%;
+      float: right;
+    }
+
+    .header-main {
+      display: block;
+      margin-top: 20px;
+    }
+
+    .about-nav,
+    .contact-nav {
+      font-size: 2em;
+    }
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 520px) {
+
+    .piano,
+    .guitar,
+    .mouth,
+    .violin,
+    .doublebass {
+      margin: auto;
+      display: block;
+      text-align: center;
+      padding-top: 4em;
+      height: 20em;
+      width: 50%;
+      height: 50%;
+      max-height: 30em;
+      max-width: 30em;
+    }
+
+    .carousel {
+      display: block;
+    }
+
+  }
+
+@media (min-width: 640px) {
+
+  .carousel {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    float: left;
+    text-align: center;
+    margin-left: 60px;
+  }
+
+  .main-name,
+  .main-title {
+    display: block;
+    padding-bottom: 0;
+    padding-left: 6em;
+    vertical-align: bottom;
+    text-align: center;
+  }
+
+  .main-title {
+    padding-bottom: 2.5px;
+    padding-left: 8em;
+  }
+
+  .about-nav,
+  .contact-nav,
+  .border-zero {
+    display: none;
+  }
+
+  .banner {
+    height: 36em;
+  }
+
+  .container-zero {
+    display: block;
+  }
+
+  .instruments-zero {
+    padding: 20px 0 20px 0;
+    margin-bottom: 0;
+  }
+
+  .row-two {
+    width: 60%;
+    text-align: center;
+    margin-left: 8em;
+  }
+
+
+  }
+
+  @media (min-width: 760px) {
+
+    .carousel {
+      display: none;
+    }
+
+    .logo {
+      display: block;
+      float: left;
+      text-align: center;
+      margin-left: 60px;
+    }
+
+    .main-name,
+    .main-title {
+      display: block;
+      padding-bottom: 0;
+      padding-left: 11em;
+      vertical-align: bottom;
+      text-align: center;
+    }
+
+    .main-title {
+      padding-bottom: 2.5px;
+      padding-left: 13em;
+    }
+
+    .about-nav,
+    .contact-nav,
+    .border-zero {
+      display: none;
+    }
+
+    .banner {
+      height: 34em;
+    }
+
+    .container-zero {
+      display: block;
+    }
+
+    .instruments-zero {
+      padding: 20px 0 20px 0;
+      margin-bottom: 0;
+    }
+
+    .row-two {
+      width: 70%;
+      text-align: center;
+      margin-left: 8em;
+    }
+
+    .piano-zero,
+    .guitar-zero,
+    .mouth-zero,
+    .violin-zero,
+    .doublebass-zero  {
+      width: 30%;
+      height: 30%;
+    }
+
+@media (min-width: 1100px) {
+
+  .logo {
+    display: block;
+    float: left;
+    text-align: center;
+    margin-left: 60px;
+  }
+
+  .border-zero {
+    display: none;
+  }
+
+  .header-main {
+    float: left;
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .main-nav ul{
+    float: right;
+    margin-top: 24px;
+    margin-right: 40px;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-left: 20px;
+  }
+
+  .about-nav {
+    margin-right: auto;
+  }
+
+  .main-nav a {
+    font-size: 2rem;
+    border-style: none;
+  }
+  .main-nav {
+    display: block;
+    background-color: #fff;
+  }
+
+  #instruct {
+    display: block;
+  }
+
+  .main-name,
+  .main-title {
+    display: none;
+  }
+
+  .about-nav,
+  .contact-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container-zero {
+    display: none;
+  }
+
+  .about,
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about {
+    margin-top: 1em;
+    padding-top: 1em;
+    margin-bottom: (1em - 1rem);
+    padding-bottom: 1em;
+    width: 55%;
+    color: #000;
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+
+  .secondary-name {
+    display: block;
+    color: #fff;
+    padding-top: 2.6em;
+
+  }
+
+  .banner {
+    height: 30em;
+  }
+
+  .contact {
+    margin-top: 3em;
+    width: 55%;
+  }
+
+  hr {
+    display: block;
+  }
+
+  .border-one {
+    display: block;
+  }
+
+  .form-group,
+  .form-control {
+    margin: .9em 1em;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  textarea.form-control {
+    height: 150px;
+  }
+
+  .container {
+    display: block;
+    background-color: white;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .main-footer {
+    padding-top: 16px;
+  }
+
+}
